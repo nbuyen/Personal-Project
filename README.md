@@ -1,4 +1,4 @@
-# Personal-Project
+# Game-Project
 
 This is a project available on Kaggle.com, with the data could be directly downloaded from it.
 
