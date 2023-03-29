@@ -8,7 +8,7 @@ WHERE r.critic_score = '0' or r.user_score = '0'
 GROUP BY g.year 
 ORDER BY year
 --Years that video game critics loved
-SELECT TOP 5 g.year, ROUND(AVG(r.critic_score),2) AS 'avg_critic_score'
+SELECT TOP 10 g.year, ROUND(AVG(r.critic_score),2) AS 'avg_critic_score'
 FROM game_sales g JOIN reviews r ON g.game = r.game
 GROUP BY g.year
 ORDER BY avg_critic_score DESC
